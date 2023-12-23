@@ -10,7 +10,8 @@
    "productName":"MacBook"
    },
    "message":{
-    "sucessMsg":"Success: You have added MacBook to your shopping cart!"
+    "sucessMsg":"Success: You have added MacBook to your shopping cart!",
+    "emptyCartMessage":"Your shopping cart is empty!"
    }
     
 }

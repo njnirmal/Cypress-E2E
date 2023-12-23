@@ -7,7 +7,12 @@ weblocators ={
     click_search:'.btn.btn-default.btn-lg',
     product:'img[title="MacBook"]',
     btn_addToCart:'Add to Cart',
-    txt_sucessMsessage:'div.alert.alert-success.alert-dismissible'
+    txt_sucessMsessage:'div.alert.alert-success.alert-dismissible',
+    btn_cart:'button.btn.btn-inverse.btn-block.btn-lg.dropdown-toggle',
+    txt_viewcart:'[href="https://naveenautomationlabs.com/opencart/index.php?route=checkout/cart"] > strong',
+    btn_remove:'.input-group-btn > .btn-danger',
+  
+
     
 }
 
@@ -25,5 +30,22 @@ addToCart(){
 verifySucessMessage(){
     return cy.get(this.weblocators.txt_sucessMsessage)
 }
+
+clickCart(){
+    cy.get(this.weblocators.btn_cart).click()
+    cy.get(this.weblocators.txt_viewcart).first().click()
+}
+
+clickRemove(){
+
+    cy.get(this.weblocators.btn_remove).click()
+
+}
+
+verifyEmptyCartMessage(){
+    return cy.get(this.weblocators.txt_CartEmptyMessage)
+}
+
+
 
 }

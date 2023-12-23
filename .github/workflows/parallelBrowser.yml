@@ -13,11 +13,7 @@ jobs:
         with:
           browser: firefox
 
-      -name: Cypress Test Report - Firefox
-        uses: actions/upload-artifact@v4
-        with:
-          name: Mocha Awesome HTML Report - Firefox
-          path: cypress/reports/html
+      
 
   Chrome-run:
     runs-on: ubuntu-22.04
@@ -30,9 +26,3 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
           browser: chrome
-
-      - name: Cypress Test Report - Chroome
-        uses: actions/upload-artifact@v4
-        with:
-          name: Mocha Awesome HTML Report - Chrome Browser
-          path: cypress/reports/html

@@ -1,4 +1,4 @@
-name: Parallel Execution End-to-end tests
+name: Parallel Browser Execution End-to-end tests
 on: push
 jobs:
   FireFox-run:

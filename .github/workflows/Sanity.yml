@@ -1,4 +1,5 @@
-name: Sanity Suites
+name: Sanity End-to-end tests
+on: push
 jobs:
   cypress-run:
     runs-on: ubuntu-22.04

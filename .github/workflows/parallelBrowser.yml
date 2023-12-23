@@ -12,6 +12,12 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
           browser: firefox
+      - name: Cypress Test Report FireFox
+        uses: actions/upload-artifact@v4
+        with:
+          name: Mocha Awesome HTML Report -Firefox
+          path: cypress/reports/html
+          
 
       
 

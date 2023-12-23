@@ -1,4 +1,4 @@
-name: Parallel Browser Execution End-to-end tests
+name: Parallel Browser Execution End-to-end Suite
 on: push
 jobs:
   FireFox-run:
@@ -16,7 +16,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: Mocha Awesome HTML Report -Firefox
+          name: Mocha Awesome HTML Report - Firefox
           path: cypress/reports/html
           
 
@@ -38,5 +38,5 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: Mocha Awesome HTML Report -Chrome
+          name: Mocha Awesome HTML Report - Chrome
           path: cypress/reports/html

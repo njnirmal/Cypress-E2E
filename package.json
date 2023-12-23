@@ -1,0 +1,25 @@
+{
+  "name": "cypress-e2e",
+  "version": "1.0.0",
+  "description": "This README would normally document whatever steps are necessary to get your application up and running.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:addToCart": "npx cypress run --spec cypress/e2e/tests/addToCartTest.cy.js",
+    "test:addToCartBrowser": "npx cypress open --spec cypress/e2e/tests/addToCartTest.cy.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://Nirmal-Gmail@bitbucket.org/Nirmal-Gmail/cypress-e2e.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://bitbucket.org/Nirmal-Gmail/cypress-e2e/issues"
+  },
+  "homepage": "https://bitbucket.org/Nirmal-Gmail/cypress-e2e#readme",
+  "devDependencies": {
+    "cypress": "^13.6.1",
+    "cypress-mochawesome-reporter": "^3.7.0"
+  }
+}

@@ -1,0 +1,16 @@
+{
+   
+   "login":{
+
+    "username":"njnirmal@gmail.com",
+    "password":"Test123"
+
+   } ,
+   "prodcut":{
+   "productName":"MacBook"
+   },
+   "message":{
+    "sucessMsg":"Success: You have added MacBook to your shopping cart!"
+   }
+    
+}

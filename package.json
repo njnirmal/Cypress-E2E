@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "test:addToCart": "npx cypress run --spec cypress/e2e/tests/addToCartTest.cy.js",
     "test:addToCartBrowser": "npx cypress open --spec cypress/e2e/tests/addToCartTest.cy.js",
-    "test:registerTest":"npx cypress run --spec cypress/e2e/tests/registerTest.cy.js"
+    "test:registerTest": "npx cypress run --spec cypress/e2e/tests/registerTest.cy.js"
   },
   "repository": {
     "type": "git",
@@ -20,7 +20,9 @@
   },
   "homepage": "https://bitbucket.org/Nirmal-Gmail/cypress-e2e#readme",
   "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.40.1",
     "cypress": "^13.6.1",
-    "cypress-mochawesome-reporter": "^3.7.0"
+    "cypress-mochawesome-reporter": "^3.7.0",
+    "cypress-xpath": "^2.0.1"
   }
 }

@@ -27,6 +27,13 @@ describe(' add To Cart - automation ', () => {
     
 })
 
+   it('Update  Produc Qty from Checkout flow ' , () => {
+    homePageObj.searchProduct(testData.prodcut.productName)
+    homePageObj.addToCart()
+    homePageObj.verifySucessMessage().should('contain',testData.message.sucessMsg).should('contain',testData.prodcut.productName)
+    homePageObj.clickCart()
+   
+
 
   
            

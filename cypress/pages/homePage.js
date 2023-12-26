@@ -11,6 +11,9 @@ weblocators ={
     btn_cart:'button.btn.btn-inverse.btn-block.btn-lg.dropdown-toggle',
     txt_viewcart:'[href="https://naveenautomationlabs.com/opencart/index.php?route=checkout/cart"] > strong',
     btn_remove:'.input-group-btn > .btn-danger',
+    input_qty:'.input-group.btn-block>input',
+    btn_update:'.btn[data-original-title="Update"]',
+    
   
 
     

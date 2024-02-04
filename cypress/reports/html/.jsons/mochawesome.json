@@ -1,0 +1,143 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-12-26T03:17:11.509Z",
+    "end": "2023-12-26T03:17:22.544Z",
+    "duration": 11035,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "d2ee8fa7-106a-46ce-9787-1aa21c812e3f",
+      "title": "",
+      "fullFile": "cypress\\e2e\\tests\\addToCartTest.cy.js",
+      "file": "cypress\\e2e\\tests\\addToCartTest.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "45e7295e-8932-4fcd-81d2-df7b20aebdba",
+          "title": " add To Cart - automation ",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Add to cart flow ",
+              "fullTitle": " add To Cart - automation  Add to cart flow ",
+              "timedOut": null,
+              "duration": 6071,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "homePageObj.searchProduct(_testData.default.prodcut.productName);\nhomePageObj.addToCart();\nhomePageObj.verifySucessMessage().should('contain', _testData.default.message.sucessMsg).should('contain', _testData.default.prodcut.productName);",
+              "err": {},
+              "uuid": "1703faae-8af3-4a58-ada9-d9a5f12d098b",
+              "parentUUID": "45e7295e-8932-4fcd-81d2-df7b20aebdba",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Remove Product from Checkout flow ",
+              "fullTitle": " add To Cart - automation  Remove Product from Checkout flow ",
+              "timedOut": null,
+              "duration": 2420,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "homePageObj.searchProduct(_testData.default.prodcut.productName);\nhomePageObj.addToCart();\nhomePageObj.verifySucessMessage().should('contain', _testData.default.message.sucessMsg).should('contain', _testData.default.prodcut.productName);\nhomePageObj.clickCart();\nhomePageObj.clickRemove();",
+              "err": {},
+              "uuid": "838d1dca-76d6-42f9-875f-b2ae79628546",
+              "parentUUID": "45e7295e-8932-4fcd-81d2-df7b20aebdba",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Update  Produc Qty from Checkout flow ",
+              "fullTitle": " add To Cart - automation  Update  Produc Qty from Checkout flow ",
+              "timedOut": null,
+              "duration": 2431,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "homePageObj.searchProduct(_testData.default.prodcut.productName);\nhomePageObj.addToCart();\nhomePageObj.verifySucessMessage().should('contain', _testData.default.message.sucessMsg).should('contain', _testData.default.prodcut.productName);\nhomePageObj.clickCart();",
+              "err": {},
+              "uuid": "556ad453-361e-46e8-a888-61f837c63c18",
+              "parentUUID": "45e7295e-8932-4fcd-81d2-df7b20aebdba",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "1703faae-8af3-4a58-ada9-d9a5f12d098b",
+            "838d1dca-76d6-42f9-875f-b2ae79628546",
+            "556ad453-361e-46e8-a888-61f837c63c18"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 10922,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
